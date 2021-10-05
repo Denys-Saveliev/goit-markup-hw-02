@@ -127,6 +127,10 @@ body {
 
 /* our team */
 
+.section-background {
+    background-color: var(--secondary-bg-color);
+}
+
 .team-name {
     font-style: normal;
     font-weight: 500;
@@ -179,4 +183,52 @@ body {
 }
 
 /* Портфолио */
+
+.section-bg {
+    background-color: var(--secondary-bg-color);    
+}
+
+.cards {
+    list-style: none;
+}
+
+.btn {
+    background-color: var(--secondary-bg-color);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+}
+
+.btn:hover,
+.btn:focus {
+    background-color: var(--accent-color);
+}
+
+.section-name,
+.card-name,
+.btn {
+    color: var(--title-text-color);
+}
+
+.section-name {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 1.16;  
+}
+
+.card-name {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 2;
+}
+
+.card-direction {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.87;
+}
 
