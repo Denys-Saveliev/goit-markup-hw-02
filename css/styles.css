@@ -1,0 +1,182 @@
+:root {
+   --primary-text-color: #757575;
+   --title-text-color: #212121;
+   --hero-text-color: #FFFFFF;
+   --accent-color: #2196F3;
+   --hero-footer-bg-color: #2F303A;
+   --secondary-bg-color: #F5F4FA;
+   --primary-font-size: 14px;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+    color: #757575;
+    background-color: #FFFFFF;
+    font-size: 1.71;
+}
+
+/* Studio page */
+
+/* header */
+
+.link {
+    text-decoration: none;
+}
+
+.logo-header {
+    color: var(--accent-color);
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 26px;
+    line-height: 1.19;
+}
+    
+
+.logo-header>span {
+    color: #000000;
+}
+
+.list {
+    list-style: none;
+    font-style: normal;
+    font-weight: 500;
+    font-size: var(--primary-font-size);
+    line-height: 1.14;
+}
+
+.nav-link .link {
+    color: var(--title-text-color);
+    
+}
+
+.nav-link .link:hover,
+.nav-link .link:focus {
+   color: var(--accent-color); 
+}
+
+.nav-auth .link {
+    color: var(--primary-text-color);
+}
+
+.nav-auth .link:hover,
+.nav-auth .link:focus {
+    color: var(--accent-color);
+}
+
+/* Effective solutions for your business */
+
+.hero {
+    background-color: var(--hero-footer-bg-color);
+    width: 1600px;
+    height: 600px;
+    left: 0px;
+    top: 80px;
+}
+
+.hero-title {
+    color: var(--hero-text-color);
+    font-style: normal;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+}
+
+.hero-btn {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.87;
+    background-color: var(--accent-color);
+    color: var(--hero-text-color);
+}
+
+/* main content */
+
+.section-title,
+.particular-qualities,
+.team-name {
+    color: var(--title-text-color);
+}
+
+/* particular qualities */
+
+.section-title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 1.16;
+}
+
+.particular-qualities {
+    font-style: normal;
+    font-weight: bold;
+    font-size: var(--primary-font-size);
+    line-height: 1.14;
+}
+
+.qualities-text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: var(--primary-font-size);
+    line-height: 1.71;
+}
+
+/* what we doing */
+
+/* our team */
+
+.team-name {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+}
+
+.team-position {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.18;
+}
+
+
+/* footer */
+
+.footer {
+    background-color: var(--hero-footer-bg-color);
+    width: 1600px;
+    height: 252px;
+    }
+
+.logo-footer {
+    color: var(--accent-color);
+    text-decoration: none;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.19;
+}
+.logo-footer>span {
+    color: var(--hero-text-color);
+}
+
+.address {
+    font-style: normal;
+    font-weight: normal;
+    font-size: var(--primary-font-size);
+    line-height: 1.71;
+}
+.address .link {
+    color: #FFFFFF99;
+}
+
+.address .link:hover,
+.address .link:focus {
+    color: var(--accent-color);
+}
+
+/* Портфолио */
+
