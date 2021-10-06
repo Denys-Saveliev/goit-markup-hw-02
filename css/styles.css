@@ -6,6 +6,7 @@
    --hero-footer-bg-color: #2F303A;
    --secondary-bg-color: #F5F4FA;
    --primary-font-size: 14px;
+   
 }
 
 body {
@@ -13,137 +14,146 @@ body {
     color: #757575;
     background-color: #FFFFFF;
     font-size: 1.71;
+    font-style: normal;
 }
 
 /* Studio page */
 
 /* header */
 
-.link {
+.header .link {
     text-decoration: none;
-}
+    }
 
-.logo-header {
+.nav-bar-logo {
     color: var(--accent-color);
     font-family: Raleway;
-    font-style: normal;
-    font-weight: bold;
+    font-weight: 700;
     text-decoration: none;
     font-size: 26px;
     line-height: 1.19;
+    letter-spacing: 0.03em;
 }
     
 
-.logo-header>span {
+.nav-bar-logo>span {
     color: #000000;
 }
 
 .list {
     list-style: none;
-    font-style: normal;
     font-weight: 500;
     font-size: var(--primary-font-size);
     line-height: 1.14;
+    letter-spacing: 0.02em;
 }
 
-.nav-link .link {
+.nav-bar-pages .link {
     color: var(--title-text-color);
     
 }
 
-.nav-link .link:hover,
-.nav-link .link:focus {
+.nav-bar-pages .link:hover,
+.nav-bar-pages .link:focus {
    color: var(--accent-color); 
 }
 
-.nav-auth .link {
+.nav-bar-auth .link {
     color: var(--primary-text-color);
 }
 
-.nav-auth .link:hover,
-.nav-auth .link:focus {
+.nav-bar-auth .link:hover,
+.nav-bar-auth .link:focus {
     color: var(--accent-color);
 }
+
+.nav-bar-pages .current {
+    color: var(--accent-color);
+}
+
 
 /* Effective solutions for your business */
 
 .hero {
     background-color: var(--hero-footer-bg-color);
-    width: 1600px;
-    height: 600px;
-    left: 0px;
-    top: 80px;
 }
 
-.hero-title {
-    color: var(--hero-text-color);
-    font-style: normal;
+.hero-title {    
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
+    color: var(--hero-text-color);    
+    letter-spacing: 0.06em;
+    text-align: center;
 }
 
 .hero-btn {
-    font-style: normal;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
     background-color: var(--accent-color);
     color: var(--hero-text-color);
     cursor: pointer;
+    text-align: center;
+    letter-spacing: 0.06em;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: none;
+    width: 200px;
+    height: 50px;
 }
 
 /* main content */
 
 .section-title,
 .particular-qualities,
-.team-name {
+.section-team-name {
     color: var(--title-text-color);
+    letter-spacing: 0.03em;
 }
 
 /* particular qualities */
 
 .section-title {
-    font-style: normal;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
+    text-align: center;
 }
 
 .particular-qualities {
-    font-style: normal;
-    font-weight: bold;
+    font-weight: 700;
     font-size: var(--primary-font-size);
     line-height: 1.14;
+    text-transform: uppercase;
 }
 
 .qualities-text {
-    font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
     font-size: var(--primary-font-size);
     line-height: 1.71;
+    letter-spacing: 0.03em;
 }
 
 /* what we doing */
 
 /* our team */
 
-.section-background {
+.section>.container {
     background-color: var(--secondary-bg-color);
 }
 
-.team-name {
-    font-style: normal;
+.section-team-name {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.18;
 }
 
-.team-position {
-    font-style: normal;
-    font-weight: normal;
+.section-team-position {
+    font-weight: 400;
     font-size: 16px;
     line-height: 1.18;
+    letter-spacing: 0.03em;
 }
 
 
@@ -151,31 +161,43 @@ body {
 
 .footer {
     background-color: var(--hero-footer-bg-color);
-    width: 1600px;
-    height: 252px;
-    }
+} 
+
+.address-list {
+    list-style: none;
+}
+
+.footer .link {
+    text-decoration: none;    
+}
 
 .logo-footer {
     color: var(--accent-color);
     text-decoration: none;
     font-family: Raleway;
-    font-style: normal;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
+    letter-spacing: 0.03em;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
+
 .logo-footer>span {
     color: var(--hero-text-color);
 }
 
 .address {
-    font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
     font-size: var(--primary-font-size);
     line-height: 1.71;
 }
-.address .link {
-    color: #FFFFFF99;
+.address-list .link {
+    color: rgba(255, 255, 255, 0.6);
+    letter-spacing: 0.03em;
+}
+
+.address-list .city-link {
+    color: var(--hero-text-color)
 }
 
 .address .link:hover,
@@ -185,51 +207,82 @@ body {
 
 /* Портфолио */
 
-.section-bg {
-    background-color: var(--secondary-bg-color);    
+.container {
+    background-color: var(--hero-text-color)    
 }
 
+.section-filter,
 .cards {
     list-style: none;
 }
 
 .btn {
     background-color: var(--secondary-bg-color);
-    font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
+    letter-spacing: 0.03em;
+    text-align: center;
     cursor: pointer;
+    border: none;
 }
+    
 
 .btn:hover,
 .btn:focus {
     background-color: var(--accent-color);
 }
 
-.section-name,
-.card-name,
+.btn-first {
+    width: 79.43px;
+    height: 38px;    
+    border-radius: 4px;
+} 
+
+.section .current {
+    background-color: var(--accent-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+ 
+.btn-second {
+    width: 139.27px;
+    height: 38px;    
+    border-radius: 4px;
+}
+.btn-third {
+    width: 157.76px;
+    height: 38px;
+}
+
+.btn-fourth {
+    width: 112.07px;
+    height: 38px;
+}
+
+.btn-fifth {
+    width: 141.44px;
+    height: 38px;
+}
+
+.cards-title,
 .btn {
     color: var(--title-text-color);
 }
 
 .section-name {
-    font-style: normal;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 36px;
     line-height: 1.16;  
 }
 
-.card-name {
-    font-style: normal;
-    font-weight: bold;
+.cards-title {
+    font-weight: 700;
     font-size: 18px;
     line-height: 2;
 }
 
-.card-direction {
-    font-style: normal;
-    font-weight: normal;
+.cards-direction {
+    font-weight: 400;
     font-size: 16px;
     line-height: 1.87;
 }
